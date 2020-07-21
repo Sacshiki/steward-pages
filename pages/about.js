@@ -10,7 +10,7 @@ const About = (props) => {
     const timeoutId = setTimeout(() => {
       pageTransitionReadyToEnter()
       setLoaded(true)
-    }, 2000)
+    }, 500)
     return () => {
       clearTimeout(timeoutId)
     }
@@ -19,11 +19,11 @@ const About = (props) => {
   if (!loaded) return null
 
   return (
-    <div className="container bg-success page">
-      <h1>About us</h1>
+    <div className="container bg-green page">
+      <h1>About Steward Garden</h1>
       <p>
-        Notice how a loading spinner showed up while my content was "loading"?
-        Pretty neat, huh?
+        Use this app to keep track of your progress at Gravity Gardens
+        starting in Oakland, CA. 
       </p>
       <Link href="/">
         <a className="btn btn-light">Go back home</a>
