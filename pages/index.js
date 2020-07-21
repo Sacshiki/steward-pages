@@ -10,9 +10,9 @@ const Index = () => (
     </div>
     <hr />
     <div>
-      <Link href="/privacy"></Link>
+      <Link href="/privacy">
         <a className="btn btn-light">Privacy</a>
-      
+      </Link>
     </div>
   </div>
 )
