@@ -1,20 +1,12 @@
-import Link from 'next/link'
+import React, { Component } from "react";
+import Router from "next/router";
 
-const Index = () => (
-  <div className="container bg-green page">
-    <h1>Welcome to Steward Garden!</h1>
-    <div>
-      <Link href="/about">
-        <a className="btn btn-light">About us</a>
-      </Link>
-    </div>
-    <hr />
-    <div>
-      <Link href="/privacy">
-        <a className="btn btn-light">Privacy</a>
-      </Link>
-    </div>
-  </div>
-)
+export default class Index extends Component {
+  componentDidMount = () => {
+    Router.push("/components");
+  };
 
-export default Index
+  render() {
+    return <div />;
+  }
+}
