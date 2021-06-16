@@ -1,3 +1,7 @@
+#testing:
+npm run dev
+
+
 # [NextJS Material Kit](https://demos.creative-tim.com/nextjs-material-kit?ref=njsmk-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/share?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-kit%2Fcomponents&text=NextJS%20Material%20Kit&via=Creative%20Tim&hashtags=nextjs%20%23creativetim%20%23materialdesign)
 
 

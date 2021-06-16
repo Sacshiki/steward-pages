@@ -26,11 +26,11 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           navDropdown
-          buttonText="Components"
+          buttonText=""
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
@@ -49,34 +49,24 @@ export default function HeaderLinks(props) {
             </a>
           ]}
         />
-      </ListItem>
+      </ListItem> */}
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmk-navbar"
+          href="/privacy"
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
-          <Icon className={classes.icons}>unarchive</Icon> Upgrade to PRO
+          Privacy Policy
         </Button>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-navbar"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
-          <CloudDownload className={classes.icons} /> Download
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}> */}
         {/*<Tooltip title="Delete">
           <IconButton aria-label="Delete">
             <DeleteIcon />
           </IconButton>
         </Tooltip>*/}
-        <Tooltip
+        {/* <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
           placement={"top"}
@@ -125,7 +115,7 @@ export default function HeaderLinks(props) {
             <i className={classes.socialIcons + " fab fa-instagram"} />
           </Button>
         </Tooltip>
-      </ListItem>
+      </ListItem> */}
     </List>
   );
 }

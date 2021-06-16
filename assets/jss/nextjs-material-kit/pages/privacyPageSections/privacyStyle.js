@@ -1,11 +1,12 @@
 import { title } from "assets/jss/nextjs-material-kit.js";
 
-const productStyle = {
+const privacyStyle = {
   section: {
     padding: "70px 0",
-    textAlign: "center",
+    textAlign: "left",
     color: "#222"
   },
+
   title: {
     ...title,
     marginBottom: "1rem",
@@ -18,4 +19,4 @@ const productStyle = {
   }
 };
 
-export default productStyle;
+export default privacyStyle;

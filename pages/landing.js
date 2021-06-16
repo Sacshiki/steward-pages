@@ -35,7 +35,7 @@ export default function LandingPage(props) {
         color="transparent"
         routes={dashboardRoutes}
         brand="Garden Steward"
-        // rightLinks={<HeaderLinks />}
+        rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
           height: 400,
