@@ -20,12 +20,11 @@ export default function WorkSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Work with us</h2>
+          <h2 className={classes.title}>Garden with us</h2>
           <h4 className={classes.description}>
-            Divide details about your product or agency work into parts. Write a
-            few lines about each one and contact us about any further
-            collaboration. We will responde get back to you in a couple of
-            hours.
+            Do you have an idea for a garden or permaculture project in Oakland or elsewhere that
+            you think would be a good fit for a task, water and plant management app? Send us an
+            overview and we'll be in touch!
           </h4>
           <form>
             <GridContainer>
@@ -60,7 +59,7 @@ export default function WorkSection() {
                 }}
               />
               <GridItem xs={12} sm={12} md={4} className={classes.textCenter}>
-                <Button color="primary">Send Message</Button>
+                <Button color="primary" onClick={() => {alert("hi")}}>Send Message</Button>
               </GridItem>
             </GridContainer>
           </form>

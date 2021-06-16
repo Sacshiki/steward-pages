@@ -19,7 +19,7 @@ import styles from "assets/jss/nextjs-material-kit/pages/landingPage.js";
 
 // Sections for this page
 import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
-import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
+// import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
 import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
 
 const dashboardRoutes = [];
@@ -34,8 +34,8 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="NextJS Material Kit"
-        rightLinks={<HeaderLinks />}
+        brand="Garden Steward"
+        // rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
           height: 400,
@@ -43,28 +43,17 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter responsive image={require("assets/img/landing-bg.jpg")}>
+      <Parallax filter responsive image={require("assets/img/bee-flower-gg.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
+              <h1 className={classes.title}>A Garden Everywhere.</h1>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+                What if every city was so brimming with food that no one went hungry? If we harnessed every bit of our landscape that it provided as much as we could dream for. We would be living so abundantly it's hard to think life existing at all like it does now. Let's make this dream a reality shall we?
               </h4>
               <br />
-              <Button
-                color="danger"
-                size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-play" />
-                Watch video
-              </Button>
+              <a target="_blank" href='https://play.google.com/store/apps/details?id=com.sacshiki.gardenSteward&utm_source=steward-pages&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                <img alt='Get it on Google Play' className={classes.playButton} src={require("assets/img/google-play-badge.png")}/></a>
             </GridItem>
           </GridContainer>
         </div>
@@ -72,8 +61,7 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
-          <TeamSection />
-          <WorkSection />
+          {/* <WorkSection /> */}
         </div>
       </div>
       <Footer />

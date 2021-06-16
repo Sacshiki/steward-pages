@@ -3,9 +3,8 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
+import EmojiNatureIcon from '@material-ui/icons/EmojiNature';
+import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew';
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -20,47 +19,42 @@ export default function ProductSection() {
   return (
     <div className={classes.section}>
       <GridContainer justify="center">
+
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Let{"'"}s talk product</h2>
-          <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
-          </h5>
-        </GridItem>
-      </GridContainer>
-      <div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
+        <GridItem xs={12} sm={12} md={12}>
+          <h2 className={classes.title}>Let{"'"}s talk gardening</h2>
+          <h5 className={classes.description}>
+            After starting a garden in a high pedestrian traffic hill in Oakland California I noticed that there were a lot of people that wanted to get involved, but I didn't have a good solution on how to put them to work. This is the solution on getting volunteers educated and organized to make sure things can be accomplished without the oversite and time commitment it would otherwise require. 
+          </h5>
+          </GridItem>
+
+          <GridItem xs={12} sm={12} md={6}>
             <InfoArea
-              title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
+              title="Gardens"
+              description="Getting involved in the creation of food is magical. Become a member of multiple gardens in your area and be the most helpful where it's most needed."
+              icon={EmojiNatureIcon}
               iconColor="info"
               vertical
             />
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={12} sm={12} md={6}>
             <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
+              title="Volunteers Wanted"
+              description="Your neighborhood rocks, but it needs our help to make it the best it can be. Join other forward-thinking community members with picking up some of the much needed garden tasks on your own, and then join in on the volunteer days as the arise!"
+              icon={AccessibilityNewIcon}
               iconColor="success"
               vertical
             />
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
-              iconColor="danger"
-              vertical
-            />
-          </GridItem>
         </GridContainer>
+
+        </GridItem>
+        <GridItem xs={12} sm={12} md={4}>
+            <img src={require("assets/img/gspixel1x.png")}></img>
+        </GridItem>
+      </GridContainer>
+      <div>
       </div>
     </div>
   );
